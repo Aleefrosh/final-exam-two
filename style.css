@@ -1,0 +1,52 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+button{
+opacity: 10;
+width: 120px;
+height: 50px;
+background-color: white;
+border-radius: 15px;
+border: none;
+color: black;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+#theme{
+    opacity: 0;
+   text-align: center;
+   animation-delay: 2s;
+   transform: translatey(30px);
+   animation: moveup 1s linear forwards;
+}
+#theme1{
+    opacity:0;
+    text-align: center;
+    animation-delay: 2s;
+    transform: translatey(30px);
+    animation: moveup 2s linear forwards;
+
+}
+#button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    opacity: 0;
+    animation-delay: 3s;
+    transform: translatey(30px);
+    animation: moveup 1s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translatey(50px);
+    }
+}
